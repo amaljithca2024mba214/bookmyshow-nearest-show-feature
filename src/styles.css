@@ -1,0 +1,412 @@
+/* BookMyShow Find Nearest Show - Styling */
+
+:root {
+  --primary-red: #d72f35;
+  --light-gray: #f5f5f5;
+  --dark-text: #333;
+  --border-color: #e0e0e0;
+}
+
+.app-container {
+  max-width: 600px;
+  margin: 0 auto;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.screen {
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.header h1 {
+  font-size: 24px;
+  margin: 0;
+  color: var(--dark-text);
+}
+
+.app-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--primary-red);
+}
+
+.city-selector {
+  background-color: var(--light-gray);
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.movie-card {
+  background-color: var(--light-gray);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.movie-poster {
+  font-size: 80px;
+  margin-bottom: 15px;
+}
+
+.movie-card h2 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.no-shows-message {
+  color: #ff4444;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  background-color: var(--primary-red);
+  color: white;
+  border: 2px solid var(--primary-red);
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background-color: white;
+  color: var(--dark-text);
+  border: 1px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+  background-color: var(--light-gray);
+}
+
+.btn-location {
+  background-color: #007AFF;
+  color: white;
+  border: 2px solid #007AFF;
+}
+
+.location-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.location-container h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.location-container p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0 10px 0 0;
+}
+
+.subtitle {
+  font-size: 12px;
+  color: #999;
+  margin: 5px 0 0 0;
+}
+
+.filters {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 15px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.filter-chip {
+  background-color: var(--light-gray);
+  border: 1px solid var(--border-color);
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-chip.active {
+  background-color: var(--primary-red);
+  color: white;
+  border-color: var(--primary-red);
+}
+
+.cinema-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cinema-card {
+  background-color: var(--light-gray);
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-color);
+}
+
+.cinema-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+
+.cinema-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.cinema-header h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.distance-badge {
+  background-color: var(--primary-red);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.cinema-name {
+  font-size: 13px;
+  color: #666;
+  margin: 5px 0;
+}
+
+.travel-time {
+  font-size: 12px;
+  color: #999;
+  margin: 5px 0;
+}
+
+.showtimes {
+  display: flex;
+  gap: 8px;
+  margin: 8px 0;
+  flex-wrap: wrap;
+}
+
+.showtime-chip {
+  background-color: white;
+  border: 1px solid var(--border-color);
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.language {
+  font-size: 11px;
+  color: #666;
+  margin: 8px 0 0 0;
+}
+
+.outstation-banner {
+  background-color: #fff3cd;
+  border-left: 4px solid #ff9800;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.cinema-info {
+  background-color: var(--light-gray);
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 13px;
+}
+
+.cinema-info p {
+  margin: 5px 0;
+}
+
+.showtimes-selector {
+  margin-bottom: 20px;
+}
+
+.showtimes-selector h3 {
+  font-size: 14px;
+  margin: 0 0 10px 0;
+}
+
+.showtime-btn {
+  background-color: var(--light-gray);
+  border: 1px solid var(--border-color);
+  padding: 8px 16px;
+  border-radius: 6px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.2s ease;
+}
+
+.showtime-btn.active {
+  background-color: var(--primary-red);
+  color: white;
+  border-color: var(--primary-red);
+}
+
+.seats-container {
+  flex: 1;
+  padding: 15px 0;
+}
+
+.screen-label {
+  text-align: center;
+  font-size: 11px;
+  color: #999;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.seat-row {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.seat {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.seat:hover {
+  border-color: var(--primary-red);
+}
+
+.seat.selected {
+  background-color: var(--primary-red);
+  color: white;
+  border-color: var(--primary-red);
+}
+
+.price-summary {
+  background-color: var(--light-gray);
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 13px;
+}
+
+.price-summary p {
+  margin: 5px 0;
+  font-weight: 600;
+}
+
+.confirmation-card {
+  background-color: var(--light-gray);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.success-icon {
+  font-size: 60px;
+  color: #4CAF50;
+  margin-bottom: 15px;
+}
+
+.confirmation-card h2 {
+  margin: 0 0 20px 0;
+  color: #4CAF50;
+}
+
+.booking-details {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: left;
+  margin-bottom: 15px;
+  font-size: 13px;
+}
+
+.booking-details p {
+  margin: 8px 0;
+}
+
+.travel-note {
+  background-color: #e3f2fd;
+  border-left: 4px solid #2196F3;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 15px;
+}
